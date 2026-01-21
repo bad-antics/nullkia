@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NullKia Premium Icon - SVG -->
+<!-- @author @AnonAntics -->
+<!-- @discord discord.gg/killers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gold gradient for premium -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Diamond gradient -->
+    <linearGradient id="diamondGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B8D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#88B4FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="248" fill="#1A1A2E"/>
+  
+  <!-- Outer premium ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#goldGradient)" stroke-width="6"/>
+  
+  <!-- Crown/Premium badge -->
+  <g transform="translate(156, 100)" filter="url(#goldGlow)">
+    <!-- Crown shape -->
+    <path d="M100 150 L0 80 L30 150 L50 100 L100 150 L150 100 L170 150 L200 80 L100 150 Z" fill="url(#goldGradient)"/>
+    <!-- Crown base -->
+    <rect x="20" y="150" width="160" height="30" rx="5" fill="url(#goldGradient)"/>
+    <!-- Crown gems -->
+    <circle cx="50" cy="135" r="10" fill="url(#diamondGradient)"/>
+    <circle cx="100" cy="120" r="12" fill="#FF006E"/>
+    <circle cx="150" cy="135" r="10" fill="url(#diamondGradient)"/>
+  </g>
+  
+  <!-- PREMIUM text -->
+  <text x="256" y="340" font-family="Arial Black, sans-serif" font-size="48" font-weight="bold" fill="url(#goldGradient)" text-anchor="middle" filter="url(#goldGlow)">PREMIUM</text>
+  
+  <!-- NK Logo -->
+  <text x="256" y="400" font-family="Arial, sans-serif" font-size="28" fill="#888" text-anchor="middle">NULLKIA</text>
+  
+  <!-- Stars decoration -->
+  <g fill="url(#goldGradient)" opacity="0.8">
+    <polygon points="80,256 85,270 100,270 88,280 92,295 80,285 68,295 72,280 60,270 75,270" />
+    <polygon points="432,256 437,270 452,270 440,280 444,295 432,285 420,295 424,280 412,270 427,270" />
+    <polygon points="256,440 261,454 276,454 264,464 268,479 256,469 244,479 248,464 236,454 251,454" />
+  </g>
+  
+  <!-- Brand -->
+  <text x="256" y="480" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">discord.gg/killers | @AnonAntics</text>
+</svg>

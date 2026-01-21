@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NullKia App Icon - SVG -->
+<!-- @author @AnonAntics -->
+<!-- @discord discord.gg/killers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A202C;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Rounded square background -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="420" cy="100" r="60" fill="white" opacity="0.1"/>
+  <circle cx="100" cy="420" r="80" fill="white" opacity="0.08"/>
+  
+  <!-- Phone device -->
+  <g filter="url(#softShadow)">
+    <rect x="156" y="76" width="200" height="360" rx="28" ry="28" fill="url(#phoneGradient)"/>
+    
+    <!-- Screen -->
+    <rect x="172" y="108" width="168" height="268" rx="8" ry="8" fill="#0D1117"/>
+    
+    <!-- Screen glow -->
+    <rect x="172" y="108" width="168" height="268" rx="8" ry="8" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.5"/>
+    
+    <!-- NK Logo on screen -->
+    <text x="256" y="260" font-family="Arial Black, sans-serif" font-size="56" font-weight="bold" fill="white" text-anchor="middle">NK</text>
+    
+    <!-- Subtitle -->
+    <text x="256" y="300" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle">FIRMWARE</text>
+    
+    <!-- Status bar icons on screen -->
+    <g fill="#666">
+      <rect x="180" y="116" width="20" height="8" rx="2"/>
+      <rect x="312" y="116" width="20" height="8" rx="2"/>
+    </g>
+    
+    <!-- Home indicator -->
+    <rect x="216" y="392" width="80" height="6" rx="3" ry="3" fill="#333"/>
+    
+    <!-- Notch -->
+    <rect x="216" y="84" width="80" height="16" rx="8" ry="8" fill="#0D1117"/>
+  </g>
+  
+  <!-- Security shield badge -->
+  <g transform="translate(320, 320)">
+    <path d="M40 0 L80 20 L80 60 C80 90 60 110 40 120 C20 110 0 90 0 60 L0 20 Z" fill="#00D4FF" opacity="0.9"/>
+    <path d="M40 15 L65 30 L65 55 C65 75 52 90 40 97 C28 90 15 75 15 55 L15 30 Z" fill="#0D1117"/>
+    <text x="40" y="68" font-family="Arial" font-size="32" font-weight="bold" fill="#00D4FF" text-anchor="middle">✓</text>
+  </g>
+</svg>

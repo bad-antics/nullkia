@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NullKia Logo Icon - SVG -->
+<!-- @author @AnonAntics -->
+<!-- @discord discord.gg/killers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gradient for main logo -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7B2FFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF006E;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#0D1117" filter="url(#shadow)"/>
+  
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#mainGradient)" stroke-width="4" opacity="0.6"/>
+  
+  <!-- Inner decorative ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#mainGradient)" stroke-width="2" stroke-dasharray="20 10" opacity="0.4"/>
+  
+  <!-- Phone outline -->
+  <rect x="176" y="96" width="160" height="320" rx="24" ry="24" fill="#1A1F2E" stroke="url(#mainGradient)" stroke-width="4" filter="url(#glow)"/>
+  
+  <!-- Phone screen -->
+  <rect x="188" y="120" width="136" height="248" rx="8" ry="8" fill="#0D1117"/>
+  
+  <!-- Screen content - Matrix effect -->
+  <g opacity="0.3">
+    <text x="195" y="145" font-family="monospace" font-size="10" fill="#00FF00">01001110</text>
+    <text x="195" y="160" font-family="monospace" font-size="10" fill="#00FF00">10110100</text>
+    <text x="195" y="175" font-family="monospace" font-size="10" fill="#00FF00">01101011</text>
+    <text x="195" y="190" font-family="monospace" font-size="10" fill="#00FF00">11001001</text>
+  </g>
+  
+  <!-- Main "NK" logo on screen -->
+  <g filter="url(#glow)">
+    <text x="256" y="280" font-family="Arial Black, sans-serif" font-size="64" font-weight="bold" fill="url(#mainGradient)" text-anchor="middle">NK</text>
+  </g>
+  
+  <!-- Subtitle on screen -->
+  <text x="256" y="320" font-family="Arial, sans-serif" font-size="14" fill="#888888" text-anchor="middle">NULLKIA</text>
+  
+  <!-- Home button -->
+  <circle cx="256" cy="392" r="16" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Top speaker -->
+  <rect x="236" y="104" width="40" height="4" rx="2" ry="2" fill="#333"/>
+  
+  <!-- Security badge icon -->
+  <g transform="translate(340, 120)">
+    <path d="M20 0 L40 10 L40 30 C40 45 30 55 20 60 C10 55 0 45 0 30 L0 10 Z" fill="url(#mainGradient)" opacity="0.8"/>
+    <text x="20" y="38" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+  </g>
+  
+  <!-- Circuit lines decoration -->
+  <g stroke="url(#mainGradient)" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M100 256 L160 256"/>
+    <path d="M352 256 L412 256"/>
+    <path d="M256 80 L256 96"/>
+    <path d="M256 416 L256 432"/>
+    <circle cx="100" cy="256" r="4" fill="url(#mainGradient)"/>
+    <circle cx="412" cy="256" r="4" fill="url(#mainGradient)"/>
+  </g>
+  
+  <!-- Brand text at bottom -->
+  <text x="256" y="472" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">@AnonAntics | NullSec</text>
+</svg>
