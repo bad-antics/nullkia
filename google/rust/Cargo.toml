@@ -1,0 +1,18 @@
+[package]
+name = "titan_m"
+version = "1.0.0"
+edition = "2021"
+authors = ["bad-antics <@AnonAntics>"]
+description = "NullKia - Google Pixel Titan M Research Tool"
+repository = "https://github.com/bad-antics/nullkia"
+license = "MIT"
+keywords = ["security", "pixel", "titan-m", "mobile", "research"]
+
+[dependencies]
+aes-gcm = "0.10"
+hex = "0.4"
+clap = { version = "4", features = ["derive"] }
+
+[[bin]]
+name = "titan_m"
+path = "src/main.rs"
