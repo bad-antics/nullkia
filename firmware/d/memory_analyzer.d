@@ -1,6 +1,6 @@
 // NullKia Memory Analyzer - D Language
 // Safe systems programming with GC
-// @author @AnonAntics
+// @author bad-antics
 // @discord discord.gg/killers
 
 module memory_analyzer;
@@ -29,7 +29,7 @@ immutable string BANNER = `
 │   📡 RAM Dump & Analysis                 │
 │   💾 Process Memory Inspection           │
 │                                          │
-│            @AnonAntics | NullSec         │
+│            bad-antics | NullSec         │
 ╰──────────────────────────────────────────╯
 `;
 
@@ -300,7 +300,7 @@ bool dumpProcessMemory(string serial, int pid, string outputPath, License licens
     JSONValue manifest = [
         "tool": "NullKia Memory Analyzer",
         "version": VERSION,
-        "author": "@AnonAntics",
+        "author": "bad-antics",
         "discord": "discord.gg/killers",
         "pid": pid,
         "regions_total": regions.length,
@@ -466,7 +466,7 @@ void runInteractive(License license) {
     writeln("\n─────────────────────────────────────────");
     writeln("📱 NullKia Memory Analyzer");
     writeln("🔑 Premium: discord.gg/killers");
-    writeln("🐦 Twitter: @AnonAntics");
+    writeln("🐦 GitHub: bad-antics");
     writeln("─────────────────────────────────────────");
 }
 
@@ -481,7 +481,7 @@ void main(string[] args) {
             i++;
         } else if (args[i] == "-h" || args[i] == "--help") {
             writeln("NullKia Memory Analyzer v", VERSION);
-            writeln("@AnonAntics | discord.gg/killers");
+            writeln("bad-antics | discord.gg/killers");
             writeln();
             writeln("Usage: memory_analyzer [options]");
             writeln();

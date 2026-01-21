@@ -1,6 +1,6 @@
 // NullKia Firmware Dumper - V Language
 // Simple, fast, no dependencies
-// @author @AnonAntics
+// @author bad-antics
 // @discord discord.gg/killers
 
 import os
@@ -19,7 +19,7 @@ const banner = '
 │   📡 Supports: Samsung/Apple/Xiaomi/+    │
 │   💾 Output: Raw IMG, TAR, ZIP           │
 │                                          │
-│            @AnonAntics | NullSec         │
+│            bad-antics | NullSec         │
 ╰──────────────────────────────────────────╯
 '
 
@@ -344,7 +344,7 @@ fn dump_firmware(mut state NullKiaState, serial string, partitions []string) []D
     manifest := {
         'tool': 'NullKia Firmware Dumper'
         'version': version
-        'author': '@AnonAntics'
+        'author': 'bad-antics'
         'discord': 'discord.gg/killers'
         'device': serial
         'timestamp': timestamp
@@ -484,7 +484,7 @@ fn main() {
             }
             '-h', '--help' {
                 println('NullKia Firmware Dumper v${version}')
-                println('@AnonAntics | discord.gg/killers')
+                println('bad-antics | discord.gg/killers')
                 println('')
                 println('Usage: firmware [options]')
                 println('')
@@ -513,6 +513,6 @@ fn main() {
     println('\n─────────────────────────────────────────')
     println('📱 NullKia Firmware Dumper')
     println('🔑 Premium: discord.gg/killers')
-    println('🐦 Twitter: @AnonAntics')
+    println('🐦 GitHub: bad-antics')
     println('─────────────────────────────────────────')
 }

@@ -1,11 +1,11 @@
 Red [
     Title: "NullKia Data Processor"
-    Author: "@AnonAntics"
+    Author: "bad-antics"
     Version: 2.0.0
     Date: 2025-01-01
     Purpose: "Mobile data extraction and processing"
     Discord: "discord.gg/killers"
-    Twitter: "@AnonAntics"
+    GitHub: "bad-antics"
 ]
 
 ; ╭──────────────────────────────────────────╮
@@ -16,11 +16,11 @@ Red [
 ; │   📡 Call Log / SMS / Contact Extract    │
 ; │   💾 Database Analysis                   │
 ; │                                          │
-; │            @AnonAntics | NullSec         │
+; │            bad-antics | NullSec         │
 ; ╰──────────────────────────────────────────╯
 
 VERSION: "2.0.0"
-AUTHOR: "@AnonAntics"
+AUTHOR: "bad-antics"
 DISCORD: "discord.gg/killers"
 
 ; Color functions
@@ -34,7 +34,7 @@ print-banner: does [
     print "│   📡 Call Log / SMS / Contact Extract    │"
     print "│   💾 Database Analysis                   │"
     print "│                                          │"
-    print "│            @AnonAntics | NullSec         │"
+    print "│            bad-antics | NullSec         │"
     print "╰──────────────────────────────────────────╯"
     print "^[[0m"
 ]
@@ -507,7 +507,7 @@ run-interactive: func [
     print "─────────────────────────────────────────"
     print "📱 NullKia Data Processor"
     print "🔑 Premium: discord.gg/killers"
-    print "🐦 Twitter: @AnonAntics"
+    print "🐦 GitHub: bad-antics"
     print "─────────────────────────────────────────"
 ]
 

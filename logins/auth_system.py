@@ -2,7 +2,7 @@
 """
 NullKia Authentication System
 Custom login with session management
-@author @AnonAntics
+@author bad-antics
 @discord discord.gg/killers
 """
 
@@ -18,7 +18,7 @@ import base64
 import hmac
 
 VERSION = "2.0.0"
-AUTHOR = "@AnonAntics"
+AUTHOR = "bad-antics"
 DISCORD = "discord.gg/killers"
 
 BANNER = """
@@ -30,7 +30,7 @@ BANNER = """
 │   🔑 License Key Validation              │
 │   👤 User Profile System                 │
 │                                          │
-│            @AnonAntics | NullSec         │
+│            bad-antics | NullSec         │
 ╰──────────────────────────────────────────╯
 """
 
@@ -289,7 +289,7 @@ class UserManager:
                 "display_name": username,
                 "avatar": "default",
                 "discord": "",
-                "twitter": ""
+                "github": ""
             }
         }
         self._save_users()
@@ -350,7 +350,7 @@ class UserManager:
             return False
         
         user = self.users[username]
-        for key in ["display_name", "avatar", "discord", "twitter"]:
+        for key in ["display_name", "avatar", "discord", "github"]:
             if key in profile_data:
                 user["profile"][key] = profile_data[key]
         
@@ -468,8 +468,8 @@ class AuthCLI:
         
         if info['profile'].get('discord'):
             print(f"  Discord: {info['profile']['discord']}")
-        if info['profile'].get('twitter'):
-            print(f"  Twitter: {info['profile']['twitter']}")
+        if info['profile'].get('github'):
+            print(f"  GitHub: {info['profile']['github']}")
     
     def handle_change_password(self):
         """Handle password change"""
@@ -534,15 +534,15 @@ class AuthCLI:
         
         display_name = input("Display Name: ").strip()
         discord = input("Discord Username: ").strip()
-        twitter = input("Twitter Handle: ").strip()
+        github = input("GitHub Handle: ").strip()
         
         profile_data = {}
         if display_name:
             profile_data["display_name"] = display_name
         if discord:
             profile_data["discord"] = discord
-        if twitter:
-            profile_data["twitter"] = twitter
+        if github:
+            profile_data["github"] = github
         
         if profile_data:
             self.user_manager.update_profile(self.current_user, profile_data)
@@ -555,7 +555,7 @@ class AuthCLI:
         print(f"\n📱 NullKia Authentication System v{VERSION}")
         print(f"   Author: {AUTHOR}")
         print(f"   Discord: {DISCORD}")
-        print(f"   Twitter: @AnonAntics")
+        print(f"   GitHub: bad-antics")
         print()
         print("   Premium features available at discord.gg/killers")
     
@@ -599,7 +599,7 @@ class AuthCLI:
         print("\n─────────────────────────────────────────")
         print("📱 NullKia Authentication")
         print("🔑 Premium: discord.gg/killers")
-        print("🐦 Twitter: @AnonAntics")
+        print("🐦 GitHub: bad-antics")
         print("─────────────────────────────────────────\n")
 
 

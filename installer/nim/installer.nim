@@ -1,6 +1,6 @@
 # NullKia Installer - Nim
 # Compiles to native C for stealth and performance
-# @author @AnonAntics
+# @author bad-antics
 # @discord discord.gg/killers
 
 import os, strutils, terminal, times, httpclient, json, osproc
@@ -19,7 +19,7 @@ const
   │                                          │
   │        Press ENTER to continue...        │
   ╰──────────────────────────────────────────╯
-              @AnonAntics | NullSec
+              bad-antics | NullSec
   """
   
   LICENSE_PREFIX = "NKIA"
@@ -233,7 +233,7 @@ proc writeConfig(basePath: string, config: InstallConfig) =
     "install_path": basePath,
     "license_tier": $config.license,
     "components": config.components,
-    "author": "@AnonAntics",
+    "author": "bad-antics",
     "discord": DISCORD_URL
   }
   
@@ -246,7 +246,7 @@ proc installCore(basePath: string) =
   # Create main launcher script
   let launcher = """#!/bin/bash
 # NullKia Launcher
-# @AnonAntics | discord.gg/killers
+# bad-antics | discord.gg/killers
 
 NULLKIA_HOME="$BASEPATH"
 export NULLKIA_HOME
@@ -395,7 +395,7 @@ proc runInstaller() =
   echo "\n   Run 'nullkia' to start"
   echo "   Documentation: " & config.path & "/docs"
   echo "   Discord: " & DISCORD_URL
-  echo "   Twitter: @AnonAntics"
+  echo "   GitHub: bad-antics"
   echo ""
 
 when isMainModule:

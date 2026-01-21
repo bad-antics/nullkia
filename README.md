@@ -4,7 +4,7 @@ Samsung Knox bypass, bootloader unlock, firmware hacking, baseband exploitation,
 checkm8, checkra1n, iPhone exploit, Pixel rooting, Titan M, OnePlus unbrick,
 Xiaomi Mi Unlock, Huawei HiSuite, EDL mode, ODIN, MSM download, fastboot,
 mobile pentesting, cellular security, phone forensics, SIM unlock, IMEI repair,
-bad-antics, AnonAntics, NullSec Framework, mobile red team, phone security research
+bad-antics, bad-antics, NullSec Framework, mobile red team, phone security research
 -->
 
 <div align="center">
@@ -14,7 +14,7 @@ bad-antics, AnonAntics, NullSec Framework, mobile red team, phone security resea
 ### Obsidian-Style Mobile Security Framework
 
 [![Discord](https://img.shields.io/badge/🔑_GET_KEYS-discord.gg/killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
-[![Twitter](https://img.shields.io/badge/Twitter-@AnonAntics-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AnonAntics)
+[![GitHub](https://img.shields.io/badge/GitHub-bad-antics-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
 
 ```
  ███╗   ██╗██╗   ██╗██╗     ██╗     ██╗  ██╗██╗ █████╗ 
@@ -23,7 +23,7 @@ bad-antics, AnonAntics, NullSec Framework, mobile red team, phone security resea
  ██║╚██╗██║██║   ██║██║     ██║     ██╔═██╗ ██║██╔══██║
  ██║ ╚████║╚██████╔╝███████╗███████╗██║  ██╗██║██║  ██║
  ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
-      [ MOBILE SECURITY FRAMEWORK | @AnonAntics ]
+      [ MOBILE SECURITY FRAMEWORK | bad-antics ]
 ```
 
 ### 🔓 **[Join discord.gg/killers](https://discord.gg/killers)** for encryption keys & firmware unlocks!
@@ -226,7 +226,7 @@ These tools are for **authorized security research** and **educational purposes*
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 [![Discord](https://img.shields.io/badge/🔑_DISCORD-discord.gg/killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 
-**© 2025-2026 [@AnonAntics](https://twitter.com/AnonAntics)**
+**© 2025-2026 [bad-antics](https://github.com/bad-antics)**
 
 ### 🔓 **[JOIN DISCORD FOR KEYS & UNLOCKS](https://discord.gg/killers)** 🔓
 

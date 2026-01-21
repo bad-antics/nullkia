@@ -1,7 +1,7 @@
 /*
  * NullKia Cross-Platform GUI - Haxe
  * Write once, deploy everywhere
- * @author @AnonAntics
+ * @author bad-antics
  * @discord discord.gg/killers
  */
 
@@ -16,9 +16,9 @@ import sys.io.Process;
 // Version info
 class Config {
     public static inline var VERSION:String = "2.0.0";
-    public static inline var AUTHOR:String = "@AnonAntics";
+    public static inline var AUTHOR:String = "bad-antics";
     public static inline var DISCORD:String = "discord.gg/killers";
-    public static inline var TWITTER:String = "@AnonAntics";
+    public static inline var TWITTER:String = "bad-antics";
 }
 
 // License management
@@ -391,7 +391,7 @@ class Menu {
         Sys.println("│   📡 Firmware • Data • Analysis          │");
         Sys.println("│   💾 Haxe Cross-Platform GUI v2.0        │");
         Sys.println("│                                          │");
-        Sys.println("│            @AnonAntics | NullSec         │");
+        Sys.println("│            bad-antics | NullSec         │");
         Sys.println("╰──────────────────────────────────────────╯");
         Sys.println('${Colors.RESET}');
     }
@@ -616,7 +616,7 @@ class Menu {
         Sys.println("\n─────────────────────────────────────────");
         Sys.println("📱 NullKia Cross-Platform GUI");
         Sys.println("🔑 Premium: discord.gg/killers");
-        Sys.println("🐦 Twitter: @AnonAntics");
+        Sys.println("🐦 GitHub: bad-antics");
         Sys.println("─────────────────────────────────────────\n");
     }
 }

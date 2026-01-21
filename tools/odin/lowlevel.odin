@@ -1,6 +1,6 @@
 // NullKia Low-Level Tools - Odin Language
 // Data-oriented systems programming
-// @author @AnonAntics
+// @author bad-antics
 // @discord discord.gg/killers
 
 package nullkia_lowlevel
@@ -17,7 +17,7 @@ import "core:slice"
 import "core:c/libc"
 
 VERSION :: "2.0.0"
-AUTHOR :: "@AnonAntics"
+AUTHOR :: "bad-antics"
 DISCORD :: "discord.gg/killers"
 
 BANNER :: `
@@ -29,7 +29,7 @@ BANNER :: `
 │   📡 Bootloader / Fastboot Interface     │
 │   💾 Partition Table Analysis            │
 │                                          │
-│            @AnonAntics | NullSec         │
+│            bad-antics | NullSec         │
 ╰──────────────────────────────────────────╯
 `
 
@@ -620,7 +620,7 @@ run_interactive :: proc(license: License) {
     fmt.println("\n─────────────────────────────────────────")
     fmt.println("📱 NullKia Low-Level Tools")
     fmt.println("🔑 Premium: discord.gg/killers")
-    fmt.println("🐦 Twitter: @AnonAntics")
+    fmt.println("🐦 GitHub: bad-antics")
     fmt.println("─────────────────────────────────────────")
 }
 

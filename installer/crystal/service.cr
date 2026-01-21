@@ -1,6 +1,6 @@
 # NullKia Service Manager - Crystal
 # Ruby-like syntax with C performance
-# @author @AnonAntics
+# @author bad-antics
 # @discord discord.gg/killers
 
 require "json"
@@ -19,7 +19,7 @@ BANNER = <<-BANNER
 │   📡 REST API: http://127.0.0.1:9999     │
 │   💾 Status: Running                     │
 │                                          │
-│            @AnonAntics | NullSec         │
+│            bad-antics | NullSec         │
 ╰──────────────────────────────────────────╯
 BANNER
 
@@ -296,7 +296,7 @@ module NullKia
         json_response(context, {
           "name" => "NullKia API",
           "version" => VERSION,
-          "author" => "@AnonAntics",
+          "author" => "bad-antics",
           "discord" => "discord.gg/killers",
           "status" => "running"
         })
@@ -384,7 +384,7 @@ OptionParser.parse do |parser|
 
   parser.on("-v", "--version", "Show version") do
     puts "NullKia Service Manager v#{VERSION}"
-    puts "@AnonAntics | discord.gg/killers"
+    puts "bad-antics | discord.gg/killers"
     exit
   end
 end

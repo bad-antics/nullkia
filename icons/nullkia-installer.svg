@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NullKia Installer Icon - bad-antics | discord.gg/killers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="installGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FF88"/>
+      <stop offset="100%" style="stop-color:#00CC6A"/>
+    </linearGradient>
+    <linearGradient id="installBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#0088CC"/>
+    </linearGradient>
+    <filter id="installGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#00FF88" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="240" fill="#0a0a1a" stroke="url(#installGreen)" stroke-width="6"/>
+  
+  <!-- Download Arrow -->
+  <g filter="url(#installGlow)">
+    <path d="M256 100 L256 300" stroke="url(#installGreen)" stroke-width="40" stroke-linecap="round"/>
+    <polygon points="256,360 180,280 210,280 210,300 302,300 302,280 332,280" fill="url(#installGreen)"/>
+  </g>
+  
+  <!-- Progress Bar Base -->
+  <rect x="100" y="400" width="312" height="30" rx="15" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  
+  <!-- Progress Bar Fill -->
+  <rect x="105" y="405" width="200" height="20" rx="10" fill="url(#installGreen)"/>
+  
+  <!-- Progress Percentage -->
+  <text x="330" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" 
+        fill="#00FF88" text-anchor="start" dominant-baseline="middle">64%</text>
+  
+  <!-- NK Badge -->
+  <g transform="translate(256,180)">
+    <circle r="45" fill="#0a0a1a" stroke="url(#installBlue)" stroke-width="3"/>
+    <text y="5" font-family="Arial Black, sans-serif" font-size="30" font-weight="900" 
+          fill="url(#installBlue)" text-anchor="middle" dominant-baseline="middle">NK</text>
+  </g>
+  
+  <!-- Decorative Dots -->
+  <g fill="#00FF88" opacity="0.5">
+    <circle cx="80" cy="256" r="5"/>
+    <circle cx="432" cy="256" r="5"/>
+    <circle cx="256" cy="80" r="5"/>
+  </g>
+</svg>

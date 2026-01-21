@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NullKia Enterprise Icon - bad-antics | discord.gg/killers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="enterpriseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="50%" style="stop-color:#FFA500"/>
+      <stop offset="100%" style="stop-color:#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="enterpriseBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BFFF"/>
+      <stop offset="100%" style="stop-color:#1E90FF"/>
+    </linearGradient>
+    <filter id="enterpriseShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FFD700" flood-opacity="0.5"/>
+    </filter>
+    <filter id="innerGlow">
+      <feFlood flood-color="#FFD700" flood-opacity="0.3"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle with Gold Border -->
+  <circle cx="256" cy="256" r="240" fill="#0a0a1a" stroke="url(#enterpriseGold)" stroke-width="8"/>
+  
+  <!-- Inner Ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#enterpriseBlue)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Diamond Icon -->
+  <g filter="url(#enterpriseShadow)">
+    <polygon points="256,80 356,200 256,380 156,200" fill="url(#enterpriseGold)" opacity="0.9"/>
+    <polygon points="256,80 306,200 256,320 206,200" fill="#FFE4B5" opacity="0.6"/>
+  </g>
+  
+  <!-- N Letter -->
+  <text x="256" y="220" font-family="Arial Black, sans-serif" font-size="80" font-weight="900" 
+        fill="#0a0a1a" text-anchor="middle" dominant-baseline="middle" filter="url(#innerGlow)">N</text>
+  
+  <!-- K Letter -->
+  <text x="256" y="290" font-family="Arial Black, sans-serif" font-size="50" font-weight="900" 
+        fill="#0a0a1a" text-anchor="middle" dominant-baseline="middle">K</text>
+  
+  <!-- Enterprise Badge -->
+  <rect x="176" y="360" width="160" height="30" rx="15" fill="url(#enterpriseGold)"/>
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" 
+        fill="#0a0a1a" text-anchor="middle" dominant-baseline="middle">ENTERPRISE</text>
+  
+  <!-- Crown Accent -->
+  <g transform="translate(256,45)">
+    <polygon points="0,-20 -20,0 -10,0 -10,10 10,10 10,0 20,0" fill="url(#enterpriseGold)"/>
+    <circle cx="-15" cy="-15" r="5" fill="#FFD700"/>
+    <circle cx="0" cy="-25" r="6" fill="#FFD700"/>
+    <circle cx="15" cy="-15" r="5" fill="#FFD700"/>
+  </g>
+  
+  <!-- Decorative Stars -->
+  <g fill="#FFD700" opacity="0.7">
+    <polygon points="80,150 85,165 100,165 88,175 93,190 80,180 67,190 72,175 60,165 75,165" transform="scale(0.6) translate(50,100)"/>
+    <polygon points="80,150 85,165 100,165 88,175 93,190 80,180 67,190 72,175 60,165 75,165" transform="scale(0.6) translate(650,100)"/>
+    <polygon points="80,150 85,165 100,165 88,175 93,190 80,180 67,190 72,175 60,165 75,165" transform="scale(0.5) translate(100,600)"/>
+    <polygon points="80,150 85,165 100,165 88,175 93,190 80,180 67,190 72,175 60,165 75,165" transform="scale(0.5) translate(750,600)"/>
+  </g>
+</svg>
