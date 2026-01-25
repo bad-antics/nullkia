@@ -437,3 +437,31 @@ MIT License - [@bad-antics](https://github.com/bad-antics)
 **Part of the [NullSec Linux](https://github.com/bad-antics/nullsec-linux) ecosystem**
 
 </div>
+
+## 📱 Supported Devices
+
+### Samsung Galaxy
+- S24 Ultra, S24+, S24
+- S23 Ultra, S23+, S23
+- Z Fold 5, Z Flip 5
+- A54 5G, A34 5G
+
+### Apple iPhone
+- iPhone 15 Pro Max, 15 Pro, 15
+- iPhone 14 Pro Max, 14 Pro, 14
+- iPhone SE (3rd gen)
+
+### Google Pixel
+- Pixel 8 Pro, Pixel 8
+- Pixel 7 Pro, Pixel 7, Pixel 7a
+- Pixel 6 Pro, Pixel 6
+
+## 🔬 Baseband Research
+
+| Modem | Manufacturer | Tools |
+|-------|--------------|-------|
+| Shannon | Samsung | shannon-dump, modem-decode |
+| Snapdragon X75 | Qualcomm | qc-diag, mdm-flash |
+| Dimensity 9300 | MediaTek | mtk-exploit, brom-tools |
+| Apple M3 | Apple | iboot-extract, sep-dump |
+
