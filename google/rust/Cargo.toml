@@ -2,11 +2,14 @@
 name = "titan_m"
 version = "1.0.0"
 edition = "2021"
-authors = ["bad-antics <@AnonAntics>"]
-description = "NullKia - Google Pixel Titan M Research Tool"
-repository = "https://github.com/bad-antics/nullkia"
+authors = ["bad-antics"]
+description = "Google Pixel Titan M security research tool for analyzing secure element communications"
 license = "MIT"
-keywords = ["security", "pixel", "titan-m", "mobile", "research"]
+repository = "https://github.com/bad-antics/nullkia"
+keywords = ["security", "pixel", "titan-m", "mobile"]
+categories = ["command-line-utilities", "cryptography"]
+readme = "README.md"
+exclude = ["target/"]
 
 [dependencies]
 aes-gcm = "0.10"
@@ -16,3 +19,8 @@ clap = { version = "4", features = ["derive"] }
 [[bin]]
 name = "titan_m"
 path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
