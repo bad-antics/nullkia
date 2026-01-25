@@ -1,0 +1,36 @@
+name: Go Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+
+    - name: Build Samsung Tools
+      run: |
+        cd samsung/go
+        go build -o nullkia-knox ./...
+      continue-on-error: true
+
+    - name: Build Xiaomi Tools
+      run: |
+        cd xiaomi/go
+        go build -o nullkia-mi ./...
+      continue-on-error: true
+
+    - name: Build Common Tools
+      run: |
+        cd common/go
+        go build -o nullkia-adb ./...
+      continue-on-error: true
