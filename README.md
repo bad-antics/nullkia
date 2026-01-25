@@ -465,3 +465,5 @@ MIT License - [@bad-antics](https://github.com/bad-antics)
 | Dimensity 9300 | MediaTek | mtk-exploit, brom-tools |
 | Apple M3 | Apple | iboot-extract, sep-dump |
 
+
+<!-- Updated: 2026-01-25 13:02:45 -->
