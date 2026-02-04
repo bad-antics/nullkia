@@ -14,7 +14,7 @@ Nothing Phone, OPPO, Vivo, Realme, ASUS ROG, ZTE, Fairphone, TCL
 
 ### Mobile Security Framework v3.0.0
 
-[![Discord](https://img.shields.io/badge/🔑_GET_KEYS-discord.gg/killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
+
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Devices](https://img.shields.io/badge/Devices-500+-orange?style=for-the-badge)]()
@@ -30,7 +30,7 @@ Nothing Phone, OPPO, Vivo, Realme, ASUS ROG, ZTE, Fairphone, TCL
       [ MOBILE SECURITY FRAMEWORK v3.0 | bad-antics ]
 ```
 
-### 🔓 **[Join discord.gg/killers](https://discord.gg/killers)** for encryption keys & firmware unlocks!
+### 🔓 **[Join github.com/bad-antics/nullkia/issues](https://github.com/bad-antics/nullkia/issues)** for encryption keys & firmware unlocks!
 
 </div>
 
@@ -363,9 +363,9 @@ Features:
 
 ## 🔐 Encryption Keys
 
-Some features require encryption keys available exclusively on our Discord:
+Some features require encryption keys. Request via GitHub Issues:
 
-🔑 **[discord.gg/killers](https://discord.gg/killers)**
+🔑 **[Request Keys via Issues](https://github.com/bad-antics/nullkia/issues/new?template=key_request.md)**
 
 - Knox bypass keys
 - Firmware decryption keys
@@ -429,10 +429,10 @@ MIT License - [@bad-antics](https://github.com/bad-antics)
 
 <div align="center">
 
-**[⭐ Star this repo](https://github.com/bad-antics/nullkia)** | **[🔑 Get Keys](https://discord.gg/killers)** | **[🐛 Report Bug](https://github.com/bad-antics/nullkia/issues)** | **[📱 Device Request](https://github.com/bad-antics/nullkia/issues/new)**
+**[⭐ Star this repo](https://github.com/bad-antics/nullkia)** | **[🔑 Request Keys](https://github.com/bad-antics/nullkia/issues/new)** | **[🐛 Report Bug](https://github.com/bad-antics/nullkia/issues)** | **[📱 Device Request](https://github.com/bad-antics/nullkia/issues/new)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
-[![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
+
 
 **Part of the [NullSec Linux](https://github.com/bad-antics/nullsec-linux) ecosystem**
 
