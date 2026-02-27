@@ -1,7 +1,7 @@
 // NullKia Memory Analyzer - D Language
 // Safe systems programming with GC
 // @author bad-antics
-// @discord discord.gg/killers
+// @discord x.com/AnonAntics
 
 module memory_analyzer;
 
@@ -247,7 +247,7 @@ MemoryRegion[] getMemoryMaps(string serial, int pid) {
 bool dumpProcessMemory(string serial, int pid, string outputPath, License license) {
     if (!license.isPremium()) {
         printWarning("Memory dump requires premium license");
-        printWarning("Get premium at discord.gg/killers");
+        printWarning("Get premium at x.com/AnonAntics");
         return false;
     }
     
@@ -301,7 +301,7 @@ bool dumpProcessMemory(string serial, int pid, string outputPath, License licens
         "tool": "NullKia Memory Analyzer",
         "version": VERSION,
         "author": "bad-antics",
-        "discord": "discord.gg/killers",
+        "discord": "x.com/AnonAntics",
         "pid": pid,
         "regions_total": regions.length,
         "regions_dumped": dumped,
@@ -465,7 +465,7 @@ void runInteractive(License license) {
     
     writeln("\n─────────────────────────────────────────");
     writeln("📱 NullKia Memory Analyzer");
-    writeln("🔑 Premium: discord.gg/killers");
+    writeln("🔑 Premium: x.com/AnonAntics");
     writeln("🐦 GitHub: bad-antics");
     writeln("─────────────────────────────────────────");
 }
@@ -481,7 +481,7 @@ void main(string[] args) {
             i++;
         } else if (args[i] == "-h" || args[i] == "--help") {
             writeln("NullKia Memory Analyzer v", VERSION);
-            writeln("bad-antics | discord.gg/killers");
+            writeln("bad-antics | x.com/AnonAntics");
             writeln();
             writeln("Usage: memory_analyzer [options]");
             writeln();

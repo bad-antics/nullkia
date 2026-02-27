@@ -9,7 +9,7 @@
 #
 # NullKia Universal Installer
 # https://github.com/bad-antics/nullkia
-# Join: discord.gg/killers
+# Join: x.com/AnonAntics
 #
 
 set -e
@@ -42,7 +42,7 @@ banner() {
     echo '    ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝'
     echo -e "${NC}"
     echo -e "${CYAN}    [ Mobile Security Framework | v${NULLKIA_VERSION} ]${NC}"
-    echo -e "${YELLOW}    [ discord.gg/killers for keys & support ]${NC}"
+    echo -e "${YELLOW}    [ x.com/AnonAntics for keys & support ]${NC}"
     echo
 }
 
@@ -245,7 +245,7 @@ show_help() {
     echo "    nullkia apple checkm8 --device iPhone10,6"
     echo "    nullkia firmware dump /dev/block/bootdevice"
     echo
-    echo -e "${YELLOW}Join discord.gg/killers for encryption keys!${NC}"
+    echo -e "${YELLOW}Join x.com/AnonAntics for encryption keys!${NC}"
 }
 
 detect_device() {
@@ -334,7 +334,7 @@ cmd_samsung() {
     echo -e "${CYAN}[Samsung/Knox Tools]${NC}"
     case "$1" in
         knox-bypass)
-            echo "Knox bypass module - requires key from discord.gg/killers"
+            echo "Knox bypass module - requires key from x.com/AnonAntics"
             ;;
         odin)
             echo "ODIN flash mode utilities"
@@ -443,7 +443,7 @@ case "$1" in
         ;;
     keys)
         echo "Keys managed at: $NULLKIA_HOME/keys"
-        echo "Join discord.gg/killers for encryption keys"
+        echo "Join x.com/AnonAntics for encryption keys"
         ;;
     update)
         cmd_update
@@ -493,7 +493,7 @@ security:
 
 # Discord integration
 discord:
-  server: discord.gg/killers
+  server: x.com/AnonAntics
   auto_key_fetch: false
 
 # Manufacturer-specific settings
@@ -565,7 +565,7 @@ print_success() {
     echo "    nullkia help"
     echo
     echo -e "${YELLOW}╔══════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${YELLOW}║  Join discord.gg/killers for encryption keys & firmware!    ║${NC}"
+    echo -e "${YELLOW}║  Join x.com/AnonAntics for encryption keys & firmware!    ║${NC}"
     echo -e "${YELLOW}╚══════════════════════════════════════════════════════════════╝${NC}"
     echo
 }

@@ -188,7 +188,7 @@ sudo udevadm control --reload-rules
 
 ## Get Help
 
-- **Discord**: [discord.gg/killers](https://discord.gg/killers) - Get encryption keys here!
+- **Discord**: [x.com/AnonAntics](https://x.com/AnonAntics) - Get encryption keys here!
 - **GitHub Issues**: [github.com/bad-antics/nullkia/issues](https://github.com/bad-antics/nullkia/issues)
 
 ---

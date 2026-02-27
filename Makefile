@@ -30,7 +30,7 @@ help:
 @echo "    uninstall  - Remove NullKia"
 @echo "    clean      - Clean build artifacts"
 @echo ""
-@echo "  Join discord.gg/killers for keys!"
+@echo "  Join x.com/AnonAntics for keys!"
 @echo ""
 
 install: linux

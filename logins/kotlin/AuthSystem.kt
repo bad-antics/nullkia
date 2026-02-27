@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════════
 //  NULLKIA KOTLIN AUTHENTICATION SYSTEM
 //  JVM-based auth with modern Kotlin features
-//  @author bad-antics | discord.gg/killers
+//  @author bad-antics | x.com/AnonAntics
 // ═══════════════════════════════════════════════════════════════════
 
 package com.nullsec.nullkia.auth
@@ -16,7 +16,7 @@ import java.time.Duration
 
 const val VERSION = "2.0.0"
 const val AUTHOR = "bad-antics"
-const val DISCORD = "discord.gg/killers"
+const val DISCORD = "x.com/AnonAntics"
 
 val BANNER = """
 ╭──────────────────────────────────────────╮
@@ -464,7 +464,7 @@ fun main(args: Array<String>) {
             ConsoleUI.printSuccess(upgradeResult.message)
         } else {
             ConsoleUI.printWarning(upgradeResult.message)
-            ConsoleUI.printInfo("Get premium keys at: discord.gg/killers")
+            ConsoleUI.printInfo("Get premium keys at: x.com/AnonAntics")
         }
     }
     
@@ -480,7 +480,7 @@ fun main(args: Array<String>) {
     // Footer
     println("\n─────────────────────────────────────────")
     println("  📱 NullKia Kotlin Auth System")
-    println("  🔑 Premium: discord.gg/killers")
+    println("  🔑 Premium: x.com/AnonAntics")
     println("  👤 Author: bad-antics")
     println("─────────────────────────────────────────\n")
 }

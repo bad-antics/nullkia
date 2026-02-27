@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════════
 //  NULLKIA ZIG INSTALLER
 //  High-performance system installer in Zig
-//  @author bad-antics | discord.gg/killers
+//  @author bad-antics | x.com/AnonAntics
 // ═══════════════════════════════════════════════════════════════════
 
 const std = @import("std");
@@ -12,7 +12,7 @@ const io = std.io;
 
 const VERSION = "2.0.0";
 const AUTHOR = "bad-antics";
-const DISCORD = "discord.gg/killers";
+const DISCORD = "x.com/AnonAntics";
 
 const BANNER =
     \\
@@ -201,7 +201,7 @@ fn performInstallation(license: License, install_path: []const u8, allocator: st
         if (comp.selected) {
             if (comp.requires_premium and license.tier == .Free) {
                 stdout.print("\n  ⚠️  Skipping {s} (Premium required)\n", .{comp.name}) catch {};
-                stdout.print("     🔑 Get premium at discord.gg/killers\n", .{}) catch {};
+                stdout.print("     🔑 Get premium at x.com/AnonAntics\n", .{}) catch {};
                 continue;
             }
             
@@ -320,7 +320,7 @@ pub fn main() !void {
     // Print footer
     stdout.print("\n─────────────────────────────────────────\n", .{}) catch {};
     stdout.print("  📱 NullKia Zig Installer\n", .{}) catch {};
-    stdout.print("  🔑 Premium: discord.gg/killers\n", .{}) catch {};
+    stdout.print("  🔑 Premium: x.com/AnonAntics\n", .{}) catch {};
     stdout.print("  👤 Author: bad-antics\n", .{}) catch {};
     stdout.print("─────────────────────────────────────────\n\n", .{}) catch {};
 }

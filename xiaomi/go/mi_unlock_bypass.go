@@ -1,7 +1,7 @@
 // NullKia - Xiaomi Mi Unlock Bypass Tool
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 package main
 
@@ -26,13 +26,13 @@ const (
 ╔═══════════════════════════════════════════════════════╗
 ║          NullKia - Xiaomi Mi Unlock Bypass            ║
 ║              @AnonAntics | NullSec                    ║
-║         discord.gg/killers for keys                   ║
+║         x.com/AnonAntics for keys                   ║
 ╚═══════════════════════════════════════════════════════╝`
 	
 	MiUnlockAPI = "https://unlock.update.miui.com/request"
 )
 
-// Encrypted bypass payload - requires key from discord.gg/killers
+// Encrypted bypass payload - requires key from x.com/AnonAntics
 var encryptedPayload = []byte{
 	0x4e, 0x55, 0x4c, 0x4c, 0x4b, 0x49, 0x41, 0x5f,
 	0x58, 0x49, 0x41, 0x4f, 0x4d, 0x49, 0x00, 0x00,
@@ -110,7 +110,7 @@ func checkUnlockTime(serial string) (int, error) {
 
 func decryptPayload(key []byte) ([]byte, error) {
 	if len(key) != 32 {
-		return nil, fmt.Errorf("invalid key: get from discord.gg/killers")
+		return nil, fmt.Errorf("invalid key: get from x.com/AnonAntics")
 	}
 	
 	block, err := aes.NewCipher(key)
@@ -124,10 +124,10 @@ func decryptPayload(key []byte) ([]byte, error) {
 	}
 	
 	if len(encryptedPayload) < gcm.NonceSize() {
-		return nil, fmt.Errorf("payload too short - get key from discord.gg/killers")
+		return nil, fmt.Errorf("payload too short - get key from x.com/AnonAntics")
 	}
 	
-	return nil, fmt.Errorf("encrypted: get key from discord.gg/killers")
+	return nil, fmt.Errorf("encrypted: get key from x.com/AnonAntics")
 }
 
 func bypassWaitTime(key string) error {
@@ -136,7 +136,7 @@ func bypassWaitTime(key string) error {
 	if key == "" {
 		fmt.Println("\n[!] ENCRYPTED CONTENT")
 		fmt.Println("[!] Wait time bypass requires encryption key")
-		fmt.Println("[!] Get your key at: discord.gg/killers")
+		fmt.Println("[!] Get your key at: x.com/AnonAntics")
 		return fmt.Errorf("no key")
 	}
 	
@@ -171,7 +171,7 @@ func unlockBootloader(key string) error {
 	if key == "" {
 		fmt.Println("\n[!] ENCRYPTED CONTENT")
 		fmt.Println("[!] Bootloader unlock bypass requires encryption key")
-		fmt.Println("[!] Get your key at: discord.gg/killers")
+		fmt.Println("[!] Get your key at: x.com/AnonAntics")
 		
 		// Try standard unlock
 		fmt.Println("\n[*] Attempting standard unlock (requires Mi approval)...")
@@ -222,7 +222,7 @@ func showStatus() {
 	if device.UnlockStatus == "Locked" {
 		fmt.Println("\n[*] Device is locked. Options:")
 		fmt.Println("    1. Wait for official unlock (168+ hours)")
-		fmt.Println("    2. Use bypass with key from discord.gg/killers")
+		fmt.Println("    2. Use bypass with key from x.com/AnonAntics")
 		fmt.Println("    3. Enter EDL mode for advanced recovery")
 	}
 }
@@ -234,7 +234,7 @@ func main() {
 	unlock := flag.Bool("unlock", false, "Unlock bootloader")
 	edl := flag.Bool("edl", false, "Enter EDL mode")
 	bypass := flag.Bool("bypass", false, "Bypass wait time (requires key)")
-	key := flag.String("key", "", "Decryption key from discord.gg/killers")
+	key := flag.String("key", "", "Decryption key from x.com/AnonAntics")
 	
 	flag.Parse()
 	
@@ -257,7 +257,7 @@ func main() {
 	if *bypass {
 		if err := bypassWaitTime(*key); err != nil {
 			fmt.Printf("[!] Error: %v\n", err)
-			fmt.Println("\n[*] Get encryption keys at: discord.gg/killers")
+			fmt.Println("\n[*] Get encryption keys at: x.com/AnonAntics")
 		}
 		return
 	}
@@ -265,7 +265,7 @@ func main() {
 	if *unlock {
 		if err := unlockBootloader(*key); err != nil {
 			fmt.Printf("[!] Error: %v\n", err)
-			fmt.Println("\n[*] Get encryption keys at: discord.gg/killers")
+			fmt.Println("\n[*] Get encryption keys at: x.com/AnonAntics")
 		}
 		return
 	}

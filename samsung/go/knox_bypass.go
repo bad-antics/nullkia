@@ -1,7 +1,7 @@
 // NullKia - Samsung Knox Bypass Tool
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 package main
 
@@ -23,11 +23,11 @@ const (
 ╔═══════════════════════════════════════════════════════╗
 ║          NullKia - Samsung Knox Bypass                ║
 ║              @AnonAntics | NullSec                    ║
-║         discord.gg/killers for keys                   ║
+║         x.com/AnonAntics for keys                   ║
 ╚═══════════════════════════════════════════════════════╝`
 )
 
-// Encrypted payload - requires key from discord.gg/killers
+// Encrypted payload - requires key from x.com/AnonAntics
 var encryptedPayload = []byte{
 	0x4e, 0x55, 0x4c, 0x4c, 0x4b, 0x49, 0x41, 0x5f,
 	0x45, 0x4e, 0x43, 0x52, 0x59, 0x50, 0x54, 0x45,
@@ -146,10 +146,10 @@ func decryptPayload(key []byte) ([]byte, error) {
 	
 	// Nonce would be prepended to actual encrypted data
 	if len(encryptedPayload) < gcm.NonceSize() {
-		return nil, fmt.Errorf("encrypted payload too short - get key from discord.gg/killers")
+		return nil, fmt.Errorf("encrypted payload too short - get key from x.com/AnonAntics")
 	}
 	
-	return nil, fmt.Errorf("encrypted: get decryption key from discord.gg/killers")
+	return nil, fmt.Errorf("encrypted: get decryption key from x.com/AnonAntics")
 }
 
 func attemptBypass(serial string, key string) error {
@@ -159,7 +159,7 @@ func attemptBypass(serial string, key string) error {
 	if key == "" {
 		fmt.Println("\n[!] ENCRYPTED CONTENT")
 		fmt.Println("[!] This tool requires an encryption key to function")
-		fmt.Println("[!] Get your key at: discord.gg/killers")
+		fmt.Println("[!] Get your key at: x.com/AnonAntics")
 		return fmt.Errorf("no decryption key provided")
 	}
 	
@@ -204,7 +204,7 @@ func main() {
 	
 	status := flag.Bool("status", false, "Show Knox status")
 	bypass := flag.Bool("bypass", false, "Attempt Knox bypass (requires key)")
-	key := flag.String("key", "", "Decryption key from discord.gg/killers")
+	key := flag.String("key", "", "Decryption key from x.com/AnonAntics")
 	serial := flag.String("serial", "", "Target device serial")
 	list := flag.Bool("list", false, "List connected devices")
 	
@@ -250,7 +250,7 @@ func main() {
 	if *bypass {
 		if err := attemptBypass(*serial, *key); err != nil {
 			fmt.Printf("\n[!] Bypass failed: %v\n", err)
-			fmt.Println("\n[*] Get encryption keys at: discord.gg/killers")
+			fmt.Println("\n[*] Get encryption keys at: x.com/AnonAntics")
 			os.Exit(1)
 		}
 		fmt.Println("[+] Knox bypass successful!")
@@ -264,7 +264,7 @@ func main() {
 	fmt.Println("    -list     List connected devices")
 	fmt.Println("    -status   Show Knox status")
 	fmt.Println("    -bypass   Attempt bypass (requires -key)")
-	fmt.Println("    -key      Decryption key from discord.gg/killers")
+	fmt.Println("    -key      Decryption key from x.com/AnonAntics")
 	
 	time.Sleep(100 * time.Millisecond)
 }

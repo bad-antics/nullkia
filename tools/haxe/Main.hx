@@ -2,7 +2,7 @@
  * NullKia Cross-Platform GUI - Haxe
  * Write once, deploy everywhere
  * @author bad-antics
- * @discord discord.gg/killers
+ * @discord x.com/AnonAntics
  */
 
 package nullkia.gui;
@@ -17,7 +17,7 @@ import sys.io.Process;
 class Config {
     public static inline var VERSION:String = "2.0.0";
     public static inline var AUTHOR:String = "bad-antics";
-    public static inline var DISCORD:String = "discord.gg/killers";
+    public static inline var DISCORD:String = "x.com/AnonAntics";
     public static inline var TWITTER:String = "bad-antics";
 }
 
@@ -214,7 +214,7 @@ class FirmwareManager {
     public function dumpPartition(serial:String, partition:String, outputDir:String):Bool {
         if (!license.isPremium()) {
             Colors.warning("Partition dump requires premium license");
-            Colors.warning("Get premium at discord.gg/killers");
+            Colors.warning("Get premium at x.com/AnonAntics");
             return false;
         }
         
@@ -555,7 +555,7 @@ class Menu {
         
         if (!license.isPremium()) {
             Colors.warning("Upgrade to Premium for full features!");
-            Colors.info("Get your license at discord.gg/killers");
+            Colors.info("Get your license at x.com/AnonAntics");
         }
     }
     
@@ -615,7 +615,7 @@ class Menu {
         
         Sys.println("\n─────────────────────────────────────────");
         Sys.println("📱 NullKia Cross-Platform GUI");
-        Sys.println("🔑 Premium: discord.gg/killers");
+        Sys.println("🔑 Premium: x.com/AnonAntics");
         Sys.println("🐦 GitHub: bad-antics");
         Sys.println("─────────────────────────────────────────\n");
     }

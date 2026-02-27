@@ -1,7 +1,7 @@
 // NullKia Low-Level Tools - Odin Language
 // Data-oriented systems programming
 // @author bad-antics
-// @discord discord.gg/killers
+// @discord x.com/AnonAntics
 
 package nullkia_lowlevel
 
@@ -18,7 +18,7 @@ import "core:c/libc"
 
 VERSION :: "2.0.0"
 AUTHOR :: "bad-antics"
-DISCORD :: "discord.gg/killers"
+DISCORD :: "x.com/AnonAntics"
 
 BANNER :: `
 ╭──────────────────────────────────────────╮
@@ -325,7 +325,7 @@ get_partitions :: proc(serial: string, mode: Device_Mode) -> []Partition {
 flash_partition :: proc(serial: string, part_name: string, image_path: string, license: License) -> bool {
     if !is_premium(license) {
         print_warning("Flashing requires premium license")
-        print_warning("Get premium at discord.gg/killers")
+        print_warning("Get premium at x.com/AnonAntics")
         return false
     }
     
@@ -619,7 +619,7 @@ run_interactive :: proc(license: License) {
     
     fmt.println("\n─────────────────────────────────────────")
     fmt.println("📱 NullKia Low-Level Tools")
-    fmt.println("🔑 Premium: discord.gg/killers")
+    fmt.println("🔑 Premium: x.com/AnonAntics")
     fmt.println("🐦 GitHub: bad-antics")
     fmt.println("─────────────────────────────────────────")
 }

@@ -1,7 +1,7 @@
 // NullKia Firmware Dumper - V Language
 // Simple, fast, no dependencies
 // @author bad-antics
-// @discord discord.gg/killers
+// @discord x.com/AnonAntics
 
 import os
 import time
@@ -327,7 +327,7 @@ fn dump_firmware(mut state NullKiaState, serial string, partitions []string) []D
     // Check premium for full dump
     if target_partitions.len > 5 && state.license_tier == .free {
         print_warning('Free tier limited to 5 partitions')
-        print_warning('Get premium at discord.gg/killers for full dump')
+        print_warning('Get premium at x.com/AnonAntics for full dump')
         println('')
     }
     
@@ -345,7 +345,7 @@ fn dump_firmware(mut state NullKiaState, serial string, partitions []string) []D
         'tool': 'NullKia Firmware Dumper'
         'version': version
         'author': 'bad-antics'
-        'discord': 'discord.gg/killers'
+        'discord': 'x.com/AnonAntics'
         'device': serial
         'timestamp': timestamp
         'results': results.map(fn (r DumpResult) map[string]json.Any {
@@ -484,7 +484,7 @@ fn main() {
             }
             '-h', '--help' {
                 println('NullKia Firmware Dumper v${version}')
-                println('bad-antics | discord.gg/killers')
+                println('bad-antics | x.com/AnonAntics')
                 println('')
                 println('Usage: firmware [options]')
                 println('')
@@ -512,7 +512,7 @@ fn main() {
     
     println('\n─────────────────────────────────────────')
     println('📱 NullKia Firmware Dumper')
-    println('🔑 Premium: discord.gg/killers')
+    println('🔑 Premium: x.com/AnonAntics')
     println('🐦 GitHub: bad-antics')
     println('─────────────────────────────────────────')
 }

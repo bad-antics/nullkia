@@ -4,7 +4,7 @@ Red [
     Version: 2.0.0
     Date: 2025-01-01
     Purpose: "Mobile data extraction and processing"
-    Discord: "discord.gg/killers"
+    Discord: "x.com/AnonAntics"
     GitHub: "bad-antics"
 ]
 
@@ -21,7 +21,7 @@ Red [
 
 VERSION: "2.0.0"
 AUTHOR: "bad-antics"
-DISCORD: "discord.gg/killers"
+DISCORD: "x.com/AnonAntics"
 
 ; Color functions
 print-banner: does [
@@ -140,7 +140,7 @@ extract-contacts: func [
 ] [
     unless is-premium [
         print-warning "Contact extraction requires premium license"
-        print-warning "Get premium at discord.gg/killers"
+        print-warning "Get premium at x.com/AnonAntics"
         return none
     ]
     
@@ -176,7 +176,7 @@ extract-sms: func [
 ] [
     unless is-premium [
         print-warning "SMS extraction requires premium license"
-        print-warning "Get premium at discord.gg/killers"
+        print-warning "Get premium at x.com/AnonAntics"
         return none
     ]
     
@@ -350,7 +350,7 @@ full-extraction: func [
 ] [
     unless is-premium [
         print-warning "Full extraction requires premium license"
-        print-warning "Get premium at discord.gg/killers"
+        print-warning "Get premium at x.com/AnonAntics"
         return none
     ]
     
@@ -506,7 +506,7 @@ run-interactive: func [
     print ""
     print "─────────────────────────────────────────"
     print "📱 NullKia Data Processor"
-    print "🔑 Premium: discord.gg/killers"
+    print "🔑 Premium: x.com/AnonAntics"
     print "🐦 GitHub: bad-antics"
     print "─────────────────────────────────────────"
 ]

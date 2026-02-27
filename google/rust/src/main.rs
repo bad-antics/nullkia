@@ -1,7 +1,7 @@
 // NullKia - Google Pixel Titan M Research Tool
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 use std::io::{self, Write};
 use std::process::Command;
@@ -15,11 +15,11 @@ const BANNER: &str = r#"
 ╔═══════════════════════════════════════════════════════╗
 ║          NullKia - Titan M Research Tool              ║
 ║              @AnonAntics | NullSec                    ║
-║         discord.gg/killers for keys                   ║
+║         x.com/AnonAntics for keys                   ║
 ╚═══════════════════════════════════════════════════════╝
 "#;
 
-// Encrypted research data - requires key from discord.gg/killers
+// Encrypted research data - requires key from x.com/AnonAntics
 const ENCRYPTED_DATA: &[u8] = &[
     0x4e, 0x55, 0x4c, 0x4c, 0x4b, 0x49, 0x41, 0x5f,
     0x54, 0x49, 0x54, 0x41, 0x4e, 0x5f, 0x4d, 0x00,
@@ -155,7 +155,7 @@ fn get_avb_state(serial: &str) -> String {
 
 fn decrypt_payload(key: &str) -> Result<Vec<u8>, String> {
     if key.len() != 64 {
-        return Err(String::from("Invalid key length. Get key from discord.gg/killers"));
+        return Err(String::from("Invalid key length. Get key from x.com/AnonAntics"));
     }
     
     let key_bytes = hex::decode(key)
@@ -168,7 +168,7 @@ fn decrypt_payload(key: &str) -> Result<Vec<u8>, String> {
     let nonce = Nonce::from_slice(&[0u8; 12]);
     
     cipher.decrypt(nonce, ENCRYPTED_DATA)
-        .map_err(|_| String::from("Decryption failed - get valid key from discord.gg/killers"))
+        .map_err(|_| String::from("Decryption failed - get valid key from x.com/AnonAntics"))
 }
 
 fn avb_bypass(serial: &str, key: Option<&str>) -> Result<(), String> {
@@ -179,7 +179,7 @@ fn avb_bypass(serial: &str, key: Option<&str>) -> Result<(), String> {
         None => {
             println!("\n[!] ENCRYPTED CONTENT");
             println!("[!] This tool requires an encryption key to function");
-            println!("[!] Get your key at: discord.gg/killers");
+            println!("[!] Get your key at: x.com/AnonAntics");
             return Err(String::from("No decryption key"));
         }
     };
@@ -198,7 +198,7 @@ fn dump_titan_m(serial: &str, key: Option<&str>) -> Result<(), String> {
     if key.is_none() {
         println!("\n[!] ENCRYPTED CONTENT");
         println!("[!] Deep Titan M access requires encryption key");
-        println!("[!] Get your key at: discord.gg/killers");
+        println!("[!] Get your key at: x.com/AnonAntics");
         return Err(String::from("No key"));
     }
     
@@ -235,10 +235,10 @@ fn print_usage() {
     println!("    -d, --dump       Dump Titan M state");
     println!("    -b, --bypass     Attempt AVB bypass");
     println!("    -s, --serial     Target device serial");
-    println!("    -k, --key        Decryption key from discord.gg/killers");
+    println!("    -k, --key        Decryption key from x.com/AnonAntics");
     println!("    -h, --help       Show this help");
     println!();
-    println!("Get encryption keys: discord.gg/killers");
+    println!("Get encryption keys: x.com/AnonAntics");
 }
 
 fn main() {
@@ -332,7 +332,7 @@ fn main() {
     if do_dump {
         if let Err(e) = dump_titan_m(&serial, key.as_deref()) {
             eprintln!("\n[!] Error: {}", e);
-            println!("\n[*] Get encryption keys at: discord.gg/killers");
+            println!("\n[*] Get encryption keys at: x.com/AnonAntics");
         }
         return;
     }
@@ -340,7 +340,7 @@ fn main() {
     if do_bypass {
         if let Err(e) = avb_bypass(&serial, key.as_deref()) {
             eprintln!("\n[!] Error: {}", e);
-            println!("\n[*] Get encryption keys at: discord.gg/killers");
+            println!("\n[*] Get encryption keys at: x.com/AnonAntics");
         }
         return;
     }
@@ -348,5 +348,5 @@ fn main() {
     // Default: show info
     show_device_info(&serial);
     
-    println!("\n[*] For advanced features, get key from discord.gg/killers");
+    println!("\n[*] For advanced features, get key from x.com/AnonAntics");
 }

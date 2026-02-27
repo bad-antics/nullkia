@@ -2,7 +2,7 @@
 # ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║  NullKia Fastboot Enumerator - Ruby Edition                               ║
 # ║  Enumerate connected fastboot devices and gather intel                    ║
-# ║  github.com/bad-antics/nullkia | discord.gg/killers                       ║
+# ║  github.com/bad-antics/nullkia | x.com/AnonAntics                       ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 
 module NullKia

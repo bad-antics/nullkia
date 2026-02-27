@@ -1,7 +1,7 @@
 // NullKia - Baseband/Modem Firmware Dumper
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +17,7 @@
 #define MODEM_PARTITION_ALT "/dev/block/bootdevice/by-name/modem"
 #define BUFFER_SIZE (1024 * 1024)  // 1MB buffer
 
-// Encrypted analysis routines - get key from discord.gg/killers
+// Encrypted analysis routines - get key from x.com/AnonAntics
 static const uint8_t encrypted_analysis[] = {
     0x4e, 0x55, 0x4c, 0x4c, 0x4b, 0x49, 0x41, 0x00,
     0x42, 0x41, 0x53, 0x45, 0x42, 0x41, 0x4e, 0x44,
@@ -45,7 +45,7 @@ void print_banner(void) {
     printf("╔═══════════════════════════════════════════════════════╗\n");
     printf("║          NullKia - Baseband Dump Tool v%s         ║\n", VERSION);
     printf("║              @AnonAntics | NullSec                    ║\n");
-    printf("║         discord.gg/killers for keys                   ║\n");
+    printf("║         x.com/AnonAntics for keys                   ║\n");
     printf("╚═══════════════════════════════════════════════════════╝\n\n");
 }
 
@@ -233,7 +233,7 @@ void analyze_modem(const char* file, const char* key) {
     if (key == NULL) {
         printf("\n[!] ENCRYPTED CONTENT\n");
         printf("[!] Deep analysis requires encryption key\n");
-        printf("[!] Get your key at: discord.gg/killers\n");
+        printf("[!] Get your key at: x.com/AnonAntics\n");
     }
 }
 
@@ -258,10 +258,10 @@ void print_usage(const char* prog) {
     printf("    -d, --dump FILE     Dump modem to file\n");
     printf("    -a, --analyze FILE  Analyze modem dump\n");
     printf("    -p, --partition     Specify partition path\n");
-    printf("    -k, --key KEY       Decryption key from discord.gg/killers\n");
+    printf("    -k, --key KEY       Decryption key from x.com/AnonAntics\n");
     printf("    -h, --help          Show this help\n");
     printf("\n");
-    printf("Get encryption keys: discord.gg/killers\n\n");
+    printf("Get encryption keys: x.com/AnonAntics\n\n");
 }
 
 int main(int argc, char** argv) {

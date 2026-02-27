@@ -1,7 +1,7 @@
 // NullKia - Universal ADB Wrapper
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 package main
 
@@ -21,7 +21,7 @@ const (
 ╔═══════════════════════════════════════════════════════╗
 ║            NullKia - Universal ADB Wrapper            ║
 ║              @AnonAntics | NullSec                    ║
-║         discord.gg/killers for keys                   ║
+║         x.com/AnonAntics for keys                   ║
 ╚═══════════════════════════════════════════════════════╝`
 )
 

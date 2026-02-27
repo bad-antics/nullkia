@@ -3,7 +3,7 @@
 NullKia Authentication System
 Custom login with session management
 @author bad-antics
-@discord discord.gg/killers
+@discord x.com/AnonAntics
 """
 
 import hashlib
@@ -19,7 +19,7 @@ import hmac
 
 VERSION = "2.0.0"
 AUTHOR = "bad-antics"
-DISCORD = "discord.gg/killers"
+DISCORD = "x.com/AnonAntics"
 
 BANNER = """
 ╭──────────────────────────────────────────╮
@@ -500,7 +500,7 @@ class AuthCLI:
         print(f"  Current Tier: {tier.upper()}")
         
         if tier == LicenseTier.FREE:
-            print("\n  Get premium at discord.gg/killers")
+            print("\n  Get premium at x.com/AnonAntics")
         
         print("\n  [1] Enter License Key")
         print("  [0] Back")
@@ -557,7 +557,7 @@ class AuthCLI:
         print(f"   Discord: {DISCORD}")
         print(f"   GitHub: bad-antics")
         print()
-        print("   Premium features available at discord.gg/killers")
+        print("   Premium features available at x.com/AnonAntics")
     
     def run(self):
         """Run the CLI"""
@@ -598,7 +598,7 @@ class AuthCLI:
         
         print("\n─────────────────────────────────────────")
         print("📱 NullKia Authentication")
-        print("🔑 Premium: discord.gg/killers")
+        print("🔑 Premium: x.com/AnonAntics")
         print("🐦 GitHub: bad-antics")
         print("─────────────────────────────────────────\n")
 

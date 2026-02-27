@@ -3,7 +3,7 @@
  * ═══════════════════════════════════════════════════════════════════
  *  NULLKIA PHP WEB DASHBOARD
  *  Web-based device management interface
- *  @author bad-antics | discord.gg/killers
+ *  @author bad-antics | x.com/AnonAntics
  * ═══════════════════════════════════════════════════════════════════
  */
 
@@ -13,7 +13,7 @@ namespace NullKia\Dashboard;
 
 const VERSION = '2.0.0';
 const AUTHOR = 'bad-antics';
-const DISCORD = 'discord.gg/killers';
+const DISCORD = 'x.com/AnonAntics';
 
 /**
  * License Tier Enumeration

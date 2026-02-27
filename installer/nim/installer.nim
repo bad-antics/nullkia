@@ -1,7 +1,7 @@
 # NullKia Installer - Nim
 # Compiles to native C for stealth and performance
 # @author bad-antics
-# @discord discord.gg/killers
+# @discord x.com/AnonAntics
 
 import os, strutils, terminal, times, httpclient, json, osproc
 import std/[asyncdispatch, asynchttpserver, md5]
@@ -23,7 +23,7 @@ const
   """
   
   LICENSE_PREFIX = "NKIA"
-  DISCORD_URL = "https://discord.gg/killers"
+  DISCORD_URL = "https://x.com/AnonAntics"
   INSTALL_PATHS = [
     "/opt/nullkia",
     "/usr/local/nullkia",
@@ -246,7 +246,7 @@ proc installCore(basePath: string) =
   # Create main launcher script
   let launcher = """#!/bin/bash
 # NullKia Launcher
-# bad-antics | discord.gg/killers
+# bad-antics | x.com/AnonAntics
 
 NULLKIA_HOME="$BASEPATH"
 export NULLKIA_HOME
@@ -349,7 +349,7 @@ proc runInstaller() =
       printError(msg)
       config.license = ltFree
   else:
-    printWarning("Using free tier. Premium at discord.gg/killers")
+    printWarning("Using free tier. Premium at x.com/AnonAntics")
   
   # Select components
   config.components = selectComponents()

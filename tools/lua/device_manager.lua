@@ -2,12 +2,12 @@
 -- ═══════════════════════════════════════════════════════════════════
 --  NULLKIA LUA DEVICE MANAGER
 --  Lightweight scripting for device management
---  @author bad-antics | discord.gg/killers
+--  @author bad-antics | x.com/AnonAntics
 -- ═══════════════════════════════════════════════════════════════════
 
 local VERSION = "2.0.0"
 local AUTHOR = "bad-antics"
-local DISCORD = "discord.gg/killers"
+local DISCORD = "x.com/AnonAntics"
 
 local BANNER = [[
 ╭──────────────────────────────────────────╮
@@ -238,7 +238,7 @@ end
 
 function DeviceManager:getDeviceInfo(serial)
     if not self:isPremium() then
-        printWarning("Premium feature - Get keys at discord.gg/killers")
+        printWarning("Premium feature - Get keys at x.com/AnonAntics")
         return nil
     end
     
@@ -491,7 +491,7 @@ local function main()
     -- Footer
     print("\n─────────────────────────────────────────")
     print("  📱 NullKia Lua Device Manager")
-    print("  🔑 Premium: discord.gg/killers")
+    print("  🔑 Premium: x.com/AnonAntics")
     print("  👤 Author: bad-antics")
     print("─────────────────────────────────────────\n")
 end

@@ -2,7 +2,7 @@
 # ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║  NullKia ADB Scanner - Ruby Edition                                       ║
 # ║  Scan network for exposed ADB debug bridges                               ║
-# ║  github.com/bad-antics/nullkia | discord.gg/killers                       ║
+# ║  github.com/bad-antics/nullkia | x.com/AnonAntics                       ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 
 require 'socket'

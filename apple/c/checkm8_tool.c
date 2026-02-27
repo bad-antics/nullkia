@@ -1,7 +1,7 @@
 // NullKia - Apple Checkm8 Tool
 // Part of the NullSec Framework
 // https://github.com/bad-antics | @AnonAntics
-// Get encryption keys: discord.gg/killers
+// Get encryption keys: x.com/AnonAntics
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +18,7 @@
 #define APPLE_VID 0x05AC
 #define DFU_PID 0x1227
 
-// Encrypted exploit payload - get key from discord.gg/killers
+// Encrypted exploit payload - get key from x.com/AnonAntics
 static const uint8_t encrypted_payload[] = {
     0x4e, 0x55, 0x4c, 0x4c, 0x4b, 0x49, 0x41, 0x00,
     0x43, 0x48, 0x45, 0x43, 0x4b, 0x4d, 0x38, 0x00,
@@ -52,7 +52,7 @@ void print_banner(void) {
     printf("╔═══════════════════════════════════════════════════════╗\n");
     printf("║           NullKia - Checkm8 Tool v%s              ║\n", VERSION);
     printf("║              @AnonAntics | NullSec                    ║\n");
-    printf("║         discord.gg/killers for keys                   ║\n");
+    printf("║         x.com/AnonAntics for keys                   ║\n");
     printf("╚═══════════════════════════════════════════════════════╝\n\n");
 }
 
@@ -126,7 +126,7 @@ int decrypt_payload(const char* key, uint8_t* output, size_t* output_len) {
     if (!key || strlen(key) != 64) {
         printf("[!] ENCRYPTED CONTENT\n");
         printf("[!] This tool requires an encryption key to function\n");
-        printf("[!] Get your key at: discord.gg/killers\n");
+        printf("[!] Get your key at: x.com/AnonAntics\n");
         return -1;
     }
     
@@ -135,7 +135,7 @@ int decrypt_payload(const char* key, uint8_t* output, size_t* output_len) {
     
     printf("[!] Key validation... ");
     // Placeholder for actual crypto
-    printf("ENCRYPTED - get key from discord.gg/killers\n");
+    printf("ENCRYPTED - get key from x.com/AnonAntics\n");
     
     return -1;
 }
@@ -183,7 +183,7 @@ int exploit_checkm8(uint16_t cpid, const char* key) {
     size_t payload_len = sizeof(payload);
     
     if (decrypt_payload(key, payload, &payload_len) < 0) {
-        printf("\n[*] Get encryption keys at: discord.gg/killers\n");
+        printf("\n[*] Get encryption keys at: x.com/AnonAntics\n");
         return -1;
     }
     
@@ -194,12 +194,12 @@ int exploit_checkm8(uint16_t cpid, const char* key) {
 
 void enter_pwned_dfu(void) {
     printf("[*] Entering pwned DFU mode...\n");
-    printf("[!] This requires encryption key from discord.gg/killers\n");
+    printf("[!] This requires encryption key from x.com/AnonAntics\n");
 }
 
 void dump_securerom(void) {
     printf("[*] Dumping SecureROM...\n");
-    printf("[!] This requires encryption key from discord.gg/killers\n");
+    printf("[!] This requires encryption key from x.com/AnonAntics\n");
 }
 
 void print_usage(const char* prog) {
@@ -209,10 +209,10 @@ void print_usage(const char* prog) {
     printf("    -c, --check       Check for device in DFU mode\n");
     printf("    -e, --exploit     Run checkm8 exploit\n");
     printf("    -d, --dump        Dump SecureROM\n");
-    printf("    -k, --key KEY     Decryption key from discord.gg/killers\n");
+    printf("    -k, --key KEY     Decryption key from x.com/AnonAntics\n");
     printf("    -h, --help        Show this help\n");
     printf("\n");
-    printf("Get encryption keys: discord.gg/killers\n\n");
+    printf("Get encryption keys: x.com/AnonAntics\n\n");
 }
 
 int main(int argc, char** argv) {

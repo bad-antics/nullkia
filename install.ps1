@@ -8,7 +8,7 @@
 
 .NOTES
     Author: bad-antics
-    Discord: discord.gg/killers
+    Discord: x.com/AnonAntics
 #>
 
 $ErrorActionPreference = "Stop"
@@ -30,7 +30,7 @@ function Write-Banner {
     ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
 
     [ Mobile Security Framework | v$Version ]
-    [ discord.gg/killers for keys & support ]
+    [ x.com/AnonAntics for keys & support ]
 
 "@ -ForegroundColor Magenta
 }
@@ -140,7 +140,7 @@ echo     keys        Manage encryption keys
 echo     update      Update NullKia
 echo     help        Show this help
 echo.
-echo Join discord.gg/killers for encryption keys!
+echo Join x.com/AnonAntics for encryption keys!
 exit /b 0
 
 :version
@@ -178,7 +178,7 @@ exit /b 0
 
 :keys
 echo Keys managed at: %NULLKIA_HOME%\keys
-echo Join discord.gg/killers for encryption keys
+echo Join x.com/AnonAntics for encryption keys
 exit /b 0
 
 :update
@@ -285,7 +285,7 @@ function Show-Success {
     Write-Host "    nullkia help"
     Write-Host ""
     Write-Host "╔══════════════════════════════════════════════════════════════╗" -ForegroundColor Yellow
-    Write-Host "║  Join discord.gg/killers for encryption keys & firmware!    ║" -ForegroundColor Yellow
+    Write-Host "║  Join x.com/AnonAntics for encryption keys & firmware!    ║" -ForegroundColor Yellow
     Write-Host "╚══════════════════════════════════════════════════════════════╝" -ForegroundColor Yellow
     Write-Host ""
 }

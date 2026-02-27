@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- NullKia Premium Icon - SVG -->
 <!-- @author @AnonAntics -->
-<!-- @discord discord.gg/killers -->
+<!-- @discord x.com/AnonAntics -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
     <!-- Gold gradient for premium -->
@@ -60,5 +60,5 @@
   </g>
   
   <!-- Brand -->
-  <text x="256" y="480" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">discord.gg/killers | @AnonAntics</text>
+  <text x="256" y="480" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">x.com/AnonAntics | @AnonAntics</text>
 </svg>

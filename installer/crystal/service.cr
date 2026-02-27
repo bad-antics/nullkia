@@ -1,7 +1,7 @@
 # NullKia Service Manager - Crystal
 # Ruby-like syntax with C performance
 # @author bad-antics
-# @discord discord.gg/killers
+# @discord x.com/AnonAntics
 
 require "json"
 require "http/server"
@@ -297,7 +297,7 @@ module NullKia
           "name" => "NullKia API",
           "version" => VERSION,
           "author" => "bad-antics",
-          "discord" => "discord.gg/killers",
+          "discord" => "x.com/AnonAntics",
           "status" => "running"
         })
 
@@ -353,7 +353,7 @@ module NullKia
         context.response.status = HTTP::Status::FORBIDDEN
         json_response(context, {
           "error" => "Premium required",
-          "message" => "Get premium at discord.gg/killers"
+          "message" => "Get premium at x.com/AnonAntics"
         })
         return false
       end
@@ -384,7 +384,7 @@ OptionParser.parse do |parser|
 
   parser.on("-v", "--version", "Show version") do
     puts "NullKia Service Manager v#{VERSION}"
-    puts "bad-antics | discord.gg/killers"
+    puts "bad-antics | x.com/AnonAntics"
     exit
   end
 end
