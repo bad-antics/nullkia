@@ -1,7 +1,7 @@
 // NullKia Firmware Dumper - V Language
 // Simple, fast, no dependencies
 // @author bad-antics
-// @discord x.com/AnonAntics
+// @twitter x.com/AnonAntics
 
 import os
 import time

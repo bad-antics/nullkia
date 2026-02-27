@@ -8,7 +8,7 @@
 
 .NOTES
     Author: bad-antics
-    Discord: x.com/AnonAntics
+    Twitter: x.com/AnonAntics
 #>
 
 $ErrorActionPreference = "Stop"

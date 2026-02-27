@@ -1,7 +1,7 @@
 # NullKia Service Manager - Crystal
 # Ruby-like syntax with C performance
 # @author bad-antics
-# @discord x.com/AnonAntics
+# @twitter x.com/AnonAntics
 
 require "json"
 require "http/server"

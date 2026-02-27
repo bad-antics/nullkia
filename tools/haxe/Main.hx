@@ -2,7 +2,7 @@
  * NullKia Cross-Platform GUI - Haxe
  * Write once, deploy everywhere
  * @author bad-antics
- * @discord x.com/AnonAntics
+ * @twitter x.com/AnonAntics
  */
 
 package nullkia.gui;

@@ -3,7 +3,7 @@
 NullKia Authentication System
 Custom login with session management
 @author bad-antics
-@discord x.com/AnonAntics
+@twitter x.com/AnonAntics
 """
 
 import hashlib

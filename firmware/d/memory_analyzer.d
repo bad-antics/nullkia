@@ -1,7 +1,7 @@
 // NullKia Memory Analyzer - D Language
 // Safe systems programming with GC
 // @author bad-antics
-// @discord x.com/AnonAntics
+// @twitter x.com/AnonAntics
 
 module memory_analyzer;
 

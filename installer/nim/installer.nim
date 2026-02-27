@@ -1,7 +1,7 @@
 # NullKia Installer - Nim
 # Compiles to native C for stealth and performance
 # @author bad-antics
-# @discord x.com/AnonAntics
+# @twitter x.com/AnonAntics
 
 import os, strutils, terminal, times, httpclient, json, osproc
 import std/[asyncdispatch, asynchttpserver, md5]

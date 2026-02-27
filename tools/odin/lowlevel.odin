@@ -1,7 +1,7 @@
 // NullKia Low-Level Tools - Odin Language
 // Data-oriented systems programming
 // @author bad-antics
-// @discord x.com/AnonAntics
+// @twitter x.com/AnonAntics
 
 package nullkia_lowlevel
 
